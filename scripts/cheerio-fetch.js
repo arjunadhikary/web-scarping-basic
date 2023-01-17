@@ -1,12 +1,12 @@
-const { default: axios } = require('axios');
-const cherrio = require('cheerio');
+import axios from 'axios';
+import cheerio from 'cheerio';
 
 const fetchDataUsingCheerio = async () => {
   try {
     const team_member_list = [];
 
     const ck_site = await (await axios('https://codekavya.com')).data;
-    const $ = cherrio.load(ck_site);
+    const $ = cheerio.load(ck_site);
     const meet_our_team = $(
       '#post-1256 > div > div > div > div > section.elementor-section.elementor-top-section.elementor-element.elementor-element-15e61d1.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div > div > div > div > div > section > div > div>div'
     );
@@ -24,5 +24,4 @@ const fetchDataUsingCheerio = async () => {
     return null;
   }
 };
-
-module.exports = fetchDataUsingCheerio;
+export default fetchDataUsingCheerio;

@@ -1,4 +1,4 @@
-const { default: puppeteer } = require('puppeteer');
+import puppeteer from 'puppeteer';
 const fetchDataUsingPuppeteer = async () => {
   try {
     const team_member_list = [];
@@ -33,4 +33,5 @@ const fetchDataUsingPuppeteer = async () => {
     return null;
   }
 };
-module.exports = fetchDataUsingPuppeteer;
+
+export default fetchDataUsingPuppeteer;

@@ -1,6 +1,6 @@
-const fetchDataUsingPuppeteer = require('./scripts/puppeteer-fetch');
-const fetchDataUsingCheerio = require('./scripts/cheerio-fetch');
-const express = require('express');
+import fetchDataUsingPuppeteer from './scripts/puppeteer-fetch.js';
+import fetchDataUsingCheerio from './scripts/cheerio-fetch.js';
+import express from 'express';
 const app = express();
 
 const port = 3000 || process.env.port;
