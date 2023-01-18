@@ -70,7 +70,9 @@ const checkResponseTime = async () => {
   );
   console.log(
     chalk.blue(
-      `Average Response time for Cheerio: ${parseInt(averageTimePuppeteer)} ms`
+      `Average Response time for Puppeteer: ${parseInt(
+        averageTimePuppeteer
+      )} ms`
     )
   );
 };

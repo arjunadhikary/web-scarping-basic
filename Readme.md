@@ -12,7 +12,8 @@ To run tests, run the following command
 
 ## Test Result
 
-![Test Result](https://cdn.hashnode.com/res/hashnode/image/upload/v1673934616989/4d9db1e0-084b-4659-b6ee-daee7cf8efc7.jpeg?auto=compress,format&format=webp)
+![Waiting For Response](/images/waiting.jpg)
+![Test Result](/images/response.jpg)
 
 ## Feedback
 
